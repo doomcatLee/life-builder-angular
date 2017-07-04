@@ -15,9 +15,9 @@ export class CategoryComponent implements OnInit {
 
 
   items: Item[] = [
-    new Item("Golden Retriever", "$800"),
-    new Item("Labrador", "$500"),
-    new Item("Shi Zhu", "$200")
+    new Item(1,"Golden Retriever", "$800"),
+    new Item(2,"Labrador", "$500"),
+    new Item(3,"Shi Zhu", "$200")
   ]
 
 }
