@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 
 import { routing } from './app.routing';
+import { FormCategoryComponent } from './form-category/form-category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    FormCategoryComponent
   ],
   imports: [
     BrowserModule,
