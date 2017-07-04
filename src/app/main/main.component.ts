@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Category} from "../category.model";
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,10 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
 
   }
 
+  categories: Category[] =[
+    new Category(1,"Pets"),
+    new Category(2,"Instruments")
+  ]
+
+
+  goToDetail(clickedCategory: Category){
+      console.log("it clicked!");
+      this.router.navigate(['category', clickedCategory.id])
+  }
 }

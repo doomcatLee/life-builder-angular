@@ -1,6 +1,8 @@
 
 <div class="container">
-  <h1>Categories are currently empty</h1>
-
+  <div *ngFor="let category of categories" (click)="goToDetail(category)" class="panel panel-default">
+    <div class="panel-body">
+      <h3><em>{{category.name}}</em></h3>
+    </div>
+  </div>
 </div>
-

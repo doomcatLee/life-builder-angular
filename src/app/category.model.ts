@@ -1,5 +1,7 @@
-import { Item } from "./item.model";
+
 export class Category {
 
-  constructor(public name: string, public items: Item[]){}
+  constructor(public id: number,
+              public name: string
+  ){}
 }
