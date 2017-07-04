@@ -9,13 +9,15 @@ import { MainComponent } from './main/main.component';
 import { routing } from './app.routing';
 import { FormCategoryComponent } from './form-category/form-category.component';
 import { CategoryComponent } from './category/category.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     FormCategoryComponent,
-    CategoryComponent
+    CategoryComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
