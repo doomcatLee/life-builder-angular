@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Category} from "../category.model";
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,7 +10,7 @@ import {Category} from "../category.model";
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
 
@@ -20,4 +21,9 @@ export class MainComponent implements OnInit {
     new Category(2,"Instruments")
   ]
 
+
+  goToDetail(clickedCategory: Category){
+      console.log("it clicked!");
+      this.router.navigate(['category', clickedCategory.id])
+  }
 }

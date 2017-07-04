@@ -17,7 +17,7 @@ const appRoutes: Routes = [
     component: FormCategoryComponent
   },
   {
-    path: 'category',
+    path: 'category/:id',
     component: CategoryComponent
   }
 
