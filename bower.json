@@ -1,0 +1,18 @@
+{
+  "name": "life-builder-angular",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Alex Lee <doomcat9167@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/doomcatLee/MyRestaurant",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
